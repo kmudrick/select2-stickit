@@ -1,12 +1,12 @@
 (function (root, factory) {
     if (typeof define === "function" && define.amd) {
-        define(["backbone", "Select2"], factory);
+        define(["backbone"], factory);
     } else if (typeof exports === "object") {
-        module.exports = factory(require("backbone"), require("Select2"));
+        module.exports = factory(require("backbone"));
     } else {
-        root.Requester = factory(root.$, root._);
+        root.Requester = factory(root.Backbone);
     }
-}(this, function (Backbone, Select2) {
+}(this, function (Backbone) {
 
     // from https://github.com/NYTimes/backbone.stickit/issues/97
     // Based on http://jsfiddle.net/px6UP/36/
