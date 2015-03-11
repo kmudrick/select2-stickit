@@ -1,4 +1,12 @@
-(function(){
+(function (root, factory) {
+    if (typeof define === "function" && define.amd) {
+        define(["backbone", "Select2"], factory);
+    } else if (typeof exports === "object") {
+        module.exports = factory(require("backbone"), require("Select2"));
+    } else {
+        root.Requester = factory(root.$, root._);
+    }
+}(this, function (Backbone, Select2) {
 
     // from https://github.com/NYTimes/backbone.stickit/issues/97
     // Based on http://jsfiddle.net/px6UP/36/
@@ -22,4 +30,4 @@
         }
     });
 
-})();
+}));
