@@ -1,0 +1,25 @@
+{
+  "name": "select2-stickit",
+  "version": "0.0.1",
+  "description": "stickit binding support for select2",
+  "homepage": "https://github.com/kmudrick/select2-stickit",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kmudrick/select2-stickit.git"
+  },
+  "keywords": [
+    "backbone",
+    "select2",
+    "stickit"
+  ],
+  "scripts": {
+    "test": "grunt jasmine"
+  },
+  "author": "Kevin Mudrick <kevin@mudrick.com>",
+  "license": "MIT",
+  "main": "select2-stickit.js",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "backbone.stickit": "~0.9.0"
+  }
+}
